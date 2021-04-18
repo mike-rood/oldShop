@@ -1,12 +1,13 @@
 <?php
-    include_once '../config/config.php';
-    include_once '../library/mainFunctions.php';
+    include_once '../config/config.php'; // Подключение файла конфигурации
+    include_once '../library/mainFunctions.php'; // Подключение общих функций
 
-    // Проверяем существование в массиве _GET параметра controller
+    // Определяем вызываемый контроллер
     $controllerName = isset($_GET['controller']) ? ucfirst($_GET['controller']) : 'index';
 
-    // Проверяем в _GET параметр action
+    // Определяем вызываемый экшен
     $actionName = isset($_GET['action']) ? $_GET['action'] : 'index';
 
+    // Вызываем соответствующие контроллер и экшен
     loadPage($controllerName, $actionName);
 
