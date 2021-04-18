@@ -1,4 +1,4 @@
 <?php
     function testAction() {
-        echo 'IndexController->testAction';
+        echo 'I\'m IndexController.php testAction()' . "<br>";
     }
