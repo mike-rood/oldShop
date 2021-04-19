@@ -8,6 +8,11 @@
     // Определяем вызываемый экшен
     $actionName = isset($_GET['action']) ? $_GET['action'] : 'index';
 
-    // Вызываем соответствующие контроллер и экшен
+    /*
+        Вызываем функцию загрузки страницы
+        $smarty - объект шаблонизатора
+        $controllerName - имя контроллера
+        $actionName - имя экшена
+    */
     loadPage($smarty, $controllerName, $actionName);
 

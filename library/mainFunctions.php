@@ -10,6 +10,22 @@
         $function($smarty);
     }
 
+    /*
+        Функция загрузки шаблона Smarty
+    */
     function loadTemplate($smarty, $templateName) {
         $smarty->display($templateName . TemplatePostfix);
+    }
+
+    /*
+        Функция дебаггинга
+        $value: проверяемый параметр
+        $die:   1 - работа останавливается
+                без параметра - работа продолжается
+    */
+    function d($value = null, $die = 1) {
+        echo '<p>Debugging</p><p>';
+        print_r($value);
+        echo '</p>';
+        if ($die) die;
     }
