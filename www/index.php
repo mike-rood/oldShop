@@ -9,5 +9,5 @@
     $actionName = isset($_GET['action']) ? $_GET['action'] : 'index';
 
     // Вызываем соответствующие контроллер и экшен
-    loadPage($controllerName, $actionName);
+    loadPage($smarty, $controllerName, $actionName);
 
