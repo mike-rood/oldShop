@@ -1,4 +1,4 @@
-<aside>
+<aside class="aside">
     <ul>
         <li>One</li>
         <li>Two</li>

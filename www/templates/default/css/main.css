@@ -1,0 +1,47 @@
+.body {
+    background-color: blanchedalmond;
+}
+
+.main {
+    background-color: coral;
+    max-width: 1600px;
+    max-height: 100%;
+    margin: 0% auto;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 100px auto auto 100px;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+.header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: blanchedalmond;
+}
+
+.aside {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: blanchedalmond;
+}
+
+.mainContent {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: blanchedalmond;
+}
+
+.footer {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: blanchedalmond;
+}

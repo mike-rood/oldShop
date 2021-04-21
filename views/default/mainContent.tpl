@@ -1,3 +1,3 @@
-<main>
+<section class="mainContent">
     I am a main content
-</main>
+</section>
