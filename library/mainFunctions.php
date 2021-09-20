@@ -24,8 +24,20 @@
                 без параметра - работа продолжается
     */
     function d($value = null, $die = 1) {
-        echo '<p>Debugging</p><p>';
+        echo '<p>Debugging</p><pre>';
         print_r($value);
-        echo '</p>';
+        echo '</pre>';
         if ($die) die;
+    }
+
+    /*
+        Преобразование результата работы функции выборки в ассоциативный массив 
+    */
+    function createSmartyRsArray($rs) {
+        if (! $rs) return false;
+        $smartyRs = array();
+        while ($row = mysql_fetch_assoc($rs)) {
+            $smartyRs[] = $row;
+        }
+        return $smartyRs;
     }

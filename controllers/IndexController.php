@@ -15,8 +15,7 @@
     function indexAction($smarty) {
         
         $rsCategories = getAllMainCatsWithChildren();   // Массив со всеми категориями, включая дочерние
-        
         $smarty->assign('pageTitle', 'Main page');
-        
+        $smarty->assign('rsCategories', $rsCategories);
         loadTemplate($smarty, 'index');
     }
