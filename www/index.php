@@ -16,4 +16,3 @@
         $actionName - имя экшена
     */
     loadPage($smarty, $controllerName, $actionName);
-
