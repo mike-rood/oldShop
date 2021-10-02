@@ -38,6 +38,14 @@
     background-color: blanchedalmond;
 }
 
+.product {
+    display: inline-block;
+}
+
+.thumbnail {
+    width: 100px;
+}
+
 .footer {
     grid-row-start: 4;
     grid-row-end: 5;
