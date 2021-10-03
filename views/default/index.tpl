@@ -9,6 +9,5 @@
         {include file='header.tpl'}
         {include file='aside.tpl'}
         {include file='mainContent.tpl'}
-        {include file='footer.tpl'}
-    </body>
-</html>
+        
+    
