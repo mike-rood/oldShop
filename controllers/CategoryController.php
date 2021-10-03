@@ -20,4 +20,10 @@ function indexAction($smarty) {
     $smarty->assign('rsProducts', $rsProducts);
     $smarty->assign('rsChildCats', $rsChildCats);
     $smarty->assign('rsCategories', $rsCategories);
+
+    loadTemplate($smarty, 'head');
+    loadTemplate($smarty, 'header');
+    loadTemplate($smarty, 'aside');
+    loadTemplate($smarty, 'category');
+    loadTemplate($smarty, 'footer');
 } 
