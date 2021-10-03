@@ -1,4 +1,3 @@
-<main class="main">
     <section class="products">
     {foreach $rsProducts as $item name=products}
         <div> 

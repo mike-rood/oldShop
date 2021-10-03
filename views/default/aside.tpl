@@ -17,3 +17,4 @@
         {/foreach} 
     </ul>
 </aside>
+<main class="main">

@@ -19,6 +19,9 @@
         $smarty->assign('pageTitle', 'Main page');
         $smarty->assign('rsCategories', $rsCategories);
         $smarty->assign('rsProducts', $rsProducts);        
-        loadTemplate($smarty, 'index');
+        loadTemplate($smarty, 'head');
+        loadTemplate($smarty, 'header');
+        loadTemplate($smarty, 'aside');
+        loadTemplate($smarty, 'products');
         loadTemplate($smarty, 'footer');
     }
