@@ -1,9 +1,5 @@
 .body {
     background-color: blanchedalmond;
-}
-
-.main {
-    background-color: coral;
     max-width: 1600px;
     height: 100%;
     margin: 0% auto;
@@ -11,7 +7,6 @@
     grid-template-columns: 300px auto;
     grid-template-rows: 100px auto auto 100px;
     grid-gap: 20px;
-    padding: 10px;
 }
 
 .header {
@@ -30,7 +25,7 @@
     background-color: blanchedalmond;
 }
 
-.mainContent {
+.main {
     grid-row-start: 2;
     grid-row-end: 4;
     grid-column-start: 2;
@@ -38,12 +33,18 @@
     background-color: blanchedalmond;
 }
 
-.product {
-    display: inline-block;
+.products {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(auto-fit, 300px);
 }
 
 .thumbnail {
-    width: 100px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer {
