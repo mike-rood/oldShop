@@ -4,5 +4,4 @@
             {$pageTitle}
         </title>
         <link rel="stylesheet" type="text/css" href="{$templateWebPath}css/main.css">
-    </head>
-    <body class="body">
+    </head>    

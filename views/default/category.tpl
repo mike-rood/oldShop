@@ -18,4 +18,3 @@
         </h2>
     {/foreach}
 </section>
-</main>

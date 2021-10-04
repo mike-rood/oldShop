@@ -1,8 +1,13 @@
 .body {
-    background-color: blanchedalmond;
+    background-color:darkseagreen;
+}
+
+.pageWrapper{
+    background-color: burlywood;
     max-width: 1600px;
     height: 100%;
-    margin: 0% auto;
+    overflow: auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 300px auto;
     grid-template-rows: 100px auto auto 100px;
@@ -53,4 +58,5 @@
     grid-column-start: 1;
     grid-column-end: 3;
     background-color: blanchedalmond;
+    bottom: 0px;
 }
