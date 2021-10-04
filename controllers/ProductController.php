@@ -12,7 +12,7 @@ function indexAction($smarty) {
     //Получить все категории
     $rsCategories = getAllMainCatsWithChildren();
     //Формирование данных для шаблонизатора
-    $smarty->assign('PageTitle', '');
+    $smarty->assign('pageTitle', $rsProduct['name']);
     $smarty->assign('rsCategories', $rsCategories);
     $smarty->assign('rsProduct', $rsProduct);
     //Сборка страницы продукта

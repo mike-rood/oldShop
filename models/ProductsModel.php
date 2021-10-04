@@ -17,3 +17,11 @@ function getProductsByCat($itemId) {
     $rs = mysql_query($sql);
     return createSmartyRsArray($rs);
 }
+
+//Получить данные продукта по ID
+function getProductById($itemId) {
+    $itemId = intval($itemId);
+    $sql = "SELECT * FROM `products` WHERE `id` = '{$itemId}'";
+    $rs = mysql_query($sql);
+    return mysql_fetch_assoc($rs);
+}
