@@ -1,5 +1,5 @@
 <aside class="aside">
-    <p>Товары</p>
+    <p><a href="http://oldshop.local">Товары</a></p>
     <ul>
         {foreach $rsCategories as $item}
             <li> 
