@@ -1,4 +1,5 @@
 <aside class="aside">
+    <section>
     <p><a href="http://oldshop.local">Товары</a></p>
     <ul>
         {foreach $rsCategories as $item}
@@ -16,5 +17,14 @@
             </li>
         {/foreach} 
     </ul>
+    </section>
+    <div>
+        <p>Корзина</p>
+        <p><a href="/cart/" title="Перейти в корзину">В корзине:</a>
+            <span id="cartCntItems">
+                {if $cartCntItems > 0}{$cartCntItems}{else}пусто{/if}
+            </span>
+        </p>    
+    </div>
 </aside>
 <main class="main">

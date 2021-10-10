@@ -13,7 +13,7 @@ function addtocartAction() {
 
     //Если значение не найдено, то добавляем
     if (isset($_SESSION['cart']) && array_search($itemId, $_SESSION['cart']) === false) {
-        $_SESSION['cart_id'][] = $itemId;
+        $_SESSION['cart'][] = $itemId;
         $resData['cntItems'] = count($_SESSION['cart']);
         $resData['success'] = 1;
     } else {
