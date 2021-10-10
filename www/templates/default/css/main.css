@@ -45,6 +45,10 @@
     grid-template-rows: repeat(auto-fit, 300px);
 }
 
+.hideme {
+    display: none;
+}
+
 .thumbnail {
     height: 200px;
     display: block;

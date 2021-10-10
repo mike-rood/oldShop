@@ -13,3 +13,19 @@ function addToCart(itemId) {
         }
     });
 }
+
+function removeFromCart(itemId) {
+    console.log("js - removeFromCart("+itemId+")");
+    $.ajax({
+        type: 'POST',
+        url: "/cart/removefromcart/" + itemId + '/',
+        dataType: 'json',
+        success: function(data) {
+            if (data['success']) {
+                $('#cartCntItems').html(data['cntItems']);
+                $('#addCart_'+ itemId).show();
+                $('#removeCart_'+ itemId).hide();
+            }
+        }
+    });
+}
