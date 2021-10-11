@@ -30,3 +30,18 @@ function registerNewUser($email, $pwdMD5, $name, $phone, $adress) {
     }
     return $rs;
 }
+
+/**
+ * Проверка почты (есть ли email-адрес в БД)  
+ * @param string $email
+ * @return array массив - строка из таблицы `users`, либо пустой массив
+ */
+function checkUserEmail($email) {
+    $email = mtsql_real_escape_string($email);
+    $sql = "SELECT `id` FROM `users` WHERE `email` = '{$email}'";
+
+    $rs = mysql_query($sql);
+    $rs = createSmartyRsArray($rs);
+
+    return $rs;
+}
