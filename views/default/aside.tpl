@@ -18,6 +18,7 @@
         {/foreach} 
     </ul>
     </section>
+    {include 'registerBox.tpl'}
     <div>
         <p>Корзина</p>
         <p><a href="/cart/" title="Перейти в корзину">В корзине:</a>
