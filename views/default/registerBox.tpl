@@ -1,4 +1,4 @@
-<section>
+<section id="registerBox">
     <div class="showHidden" onclick="showRegisterBox();">Регистрация</div>
     <div id="registerBoxHidden">
         <input type="text" id="email" name="email" value="" placeholder="Введите e-mail">
