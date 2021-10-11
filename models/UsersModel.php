@@ -37,7 +37,7 @@ function registerNewUser($email, $pwdMD5, $name, $phone, $adress) {
  * @return array массив - строка из таблицы `users`, либо пустой массив
  */
 function checkUserEmail($email) {
-    $email = mtsql_real_escape_string($email);
+    $email = mysql_real_escape_string($email);
     $sql = "SELECT `id` FROM `users` WHERE `email` = '{$email}'";
 
     $rs = mysql_query($sql);
