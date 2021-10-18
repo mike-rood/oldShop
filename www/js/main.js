@@ -75,3 +75,46 @@ function registerNewUser() {
         }
     });
 }
+
+/**
+ * Авторизация пользователя
+ */
+function login() 
+{
+    let email = $('#loginEmail').val();
+    let pwd = $('#loginPwd').val();
+
+    let postData = "email="+ email +"&pwd=" +pwd;
+
+    $.ajax({
+        type: 'POST',
+        url: "/user/login/",
+        data: postData,
+        dataType: 'json',
+        success: function(data) {
+            if (data['success']) {
+                $('#registerBox').hide();
+                $('#loginBox').hide();
+
+                $('#userLink').attr('href', '/user/');
+                $('#userLink').html(data['displayName']);
+                $('#userBox').show();
+            } else {
+                alert(data['message']);
+            }
+        }
+    });
+}
+
+function logout() {
+    $.ajax({
+        type: 'POST',
+        url: "/user/logout/",
+        success: function() {
+            alert("Вы вышли из аккаунта");
+            $('#userBox').hide();
+            $('#loginBox').show();
+            $('#registerBox').show();
+        }
+    });
+}

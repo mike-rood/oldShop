@@ -72,6 +72,7 @@ function checkRegisterParams($email, $pwd1, $pwd2) {
  * Разлогинивание пользователя
  */
 function logoutAction() {
+    $result = null;
     if (isset($_SESSION['user'])) {
         unset($_SESSION['user']);
         unset($_SESSION['cart']);
