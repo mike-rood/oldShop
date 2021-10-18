@@ -20,12 +20,12 @@
     </section>
 {if isset($arUser)}
     <div id="userBox">
-        <p><a href="#" id="userLink">{$arUser['displayName']}</a></p>
+        <p><a href="/user/" id="userLink">{$arUser['displayName']}</a></p>
         <p><a href="#" onclick="logout();">Выход</a></p>
     </div>
 {else}
     <div id="userBox" class="hideme">
-        <p><a href="#" id="userLink"></a></p>
+        <p><a href="/user/" id="userLink"></a></p>
         <p><a href="#" onclick="logout();">Выход</a></p>
     </div>
     <div id="loginBox">

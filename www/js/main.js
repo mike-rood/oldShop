@@ -112,6 +112,7 @@ function logout() {
         url: "/user/logout/",
         success: function() {
             alert("Вы вышли из аккаунта");
+            window.location.href = "http://oldshop.local";
             $('#userBox').hide();
             $('#loginBox').show();
             $('#registerBox').show();
