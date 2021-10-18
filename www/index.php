@@ -18,6 +18,12 @@
     // Определяем вызываемый экшен
     $actionName = isset($_GET['action']) ? $_GET['action'] : 'index';
 
+    // Если в сессии есть данные об авторизованном пользователе, то передаем их в шаблон
+    if (isset($_SESSION['user'])) {
+        $smarty->assign('arUser', $_SESSION['user']); //arUser - массив пользователя
+    }
+
+
     // Инициализируем переменную шаблонизатора количества элементов в корзине
     $smarty->assign('cartCntItems', count($_SESSION['cart']));
     /*

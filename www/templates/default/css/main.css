@@ -30,6 +30,16 @@
     background-color: blanchedalmond;
 }
 
+.showhidden {
+    color:cornflowerblue;
+    text-decoration-style: dotted;
+    cursor: pointer;
+}
+
+.registerBoxHidden {
+    display: none;
+}
+
 .main {
     grid-row-start: 2;
     grid-row-end: 4;
