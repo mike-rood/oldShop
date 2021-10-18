@@ -61,9 +61,9 @@ function registerNewUser() {
                 alert('Регистрация прошла успешно');
                 //> Блок в левом столбце
                 $('#registerBox').hide();
-                //$('#userLink').attr('href', '/user/');
-                //$('#userLink').html(data['userName']);
-                //$('#userBox').show();
+                $('#userLink').attr('href', '/user/');
+                $('#userLink').html(data['userName']);
+                $('#userBox').show();
                 //<
                 //>Страница заказа
                 $('#loginBox').hide();

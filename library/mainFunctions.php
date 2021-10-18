@@ -41,3 +41,15 @@
         }
         return $smartyRs;
     }
+
+    /**
+     * Редирект
+     * 
+     * @param string $url адрес для перенаправления
+     */
+    function redirect($url)
+    {
+        if (! $url) $url = '/';
+        header("Location: {$url}");
+        exit;
+    }

@@ -68,3 +68,13 @@ function checkRegisterParams($email, $pwd1, $pwd2) {
     }
     return $res;
 }
+/**
+ * Разлогинивание пользователя
+ */
+function logoutAction() {
+    if (isset($_SESSION['user'])) {
+        unset($_SESSION['user']);
+        unset($_SESSION['cart']);
+    }
+    redirect('/');
+}
