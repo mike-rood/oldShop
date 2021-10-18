@@ -33,8 +33,8 @@
                 </span>
             </td>
             <td>
-                <a id="removeCart_{$item['id']}" href="#" onClick="removeFromCart({$item['id']}); return false;" title="Удалить из корзины">Удалить</a>
-                <a id="addCart_{$item['id']}" class="hideme" href="#" onClick="addToCart({$item['id']}); return false;" title="Восстановить элемент">Восстановить</a>
+                <a id="removeCart_{$item['id']}" href="#" onclick="removeFromCart({$item['id']}); return false;" title="Удалить из корзины">Удалить</a>
+                <a id="addCart_{$item['id']}" class="hideme" href="#" onclick="addToCart({$item['id']}); return false;" title="Восстановить элемент">Восстановить</a>
             </td>
         </tr>
         {/foreach}       

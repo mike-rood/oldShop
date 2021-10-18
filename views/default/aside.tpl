@@ -20,13 +20,13 @@
     </section>
     <div id="userBox" class="hideme">
         <p><a href="#" id="userLink"></a></p>
-        <p><a href="#" onClick="logout();">Выход</a></p>
+        <p><a href="#" onclick="logout();">Выход</a></p>
     </div>
     <div id="loginBox">
         <p>Авторизация</p>
         <p><input type="text" id="loginEmail" name="loginEmail" value="" placeholder="Введите Email"></p>
         <p><input type="password" id="loginPwd" name="loginPwd" value="" placeholder="Введите пароль"></p>
-        <p><input type="button" onClick="login();" value="Войти"></p>
+        <p><input type="button" onclick="login();" value="Войти"></p>
     </div>
     {include 'registerBox.tpl'}
     <div>
