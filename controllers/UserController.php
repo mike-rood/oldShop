@@ -78,3 +78,32 @@ function logoutAction() {
     }
     redirect('/');
 }
+
+/**
+ * AJAX авторизация пользователя
+ * 
+ * @return json массив данных пользователя
+ */
+function loginAction()
+{
+    $email = isset($_REQUEST['email']) ? $_REQUEST['email'] : null;
+    $email = trim($email);
+
+    $pwd = isset($_REQUEST['pwd']) ? $_REQUEST['pwd'] : null;
+    $pwd = trim($pwd);
+
+    $userData = loginUser($email, $pwd);
+
+    if ($userData['success']) {
+        $userData = $userData[0];
+
+        $_SESSION['user'] = $userData;
+        $_SESSION['user']['displayName'] = $userData['name'] ? $userData['name'] : $userData['email'];
+
+        $resData = $_SESSION['user'];
+        $resData['success'] = 1;
+    } else {
+        $resData['success'] = 0;
+        $resData['message'] = 'Неверный логин или пароль';
+    }
+}
