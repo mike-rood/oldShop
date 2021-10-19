@@ -94,7 +94,7 @@ function updateUserData($name, $phone, $adress, $pwd1, $pwd2, $curPwd)
 
     $newPwd = null;
     if ($pwd1 && ($pwd1 == $pwd2)) {
-        $newPwd = md5($pdw1);
+        $newPwd = md5($pwd1);
     }
 
     $sql = "UPDATE `users` SET ";
